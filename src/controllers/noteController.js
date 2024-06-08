@@ -41,9 +41,10 @@ const deleteNote =async(req,res)=>{
         const note = await noteModel.findByIdAndRemove(id)
         res.status(202).json(note)
     } catch (error) {
-        console.log("spmething went wrong")
+        console.log("something went wrong...")
     }
 }
+
 const getNote =async(req,res)=>{
 
     try {
